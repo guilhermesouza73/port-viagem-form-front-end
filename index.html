@@ -8,16 +8,22 @@
       content="A Agência de Viagens encontra o hotel certo para você!"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600;700&amp;display=swap"
+    />
     <title>Agência de viagens</title>
   </head>
   <body>
     <!-- Topo / Logo -->
-    <header>
-      <div>
+    <header class="header">
+      <div class="max-content">
         <a href="index.html">
-          <img src="assets/imagens/local-logo.png" alt="" />
-          <p>Agência de Viagens</p></a
-        >
+          <div class="header-img">
+            <img src="assets/imagens/local-logo.png" alt="" />
+          </div>
+          <p>Agência de Viagens</p>
+        </a>
       </div>
     </header>
 
@@ -26,8 +32,14 @@
       <!--Formulário -->
       <section class="main-form">
         <div class="main-form-background">
-          <div class="form-content">
-            <h1>Solicite um orçamento</h1>
+          <div class="form-box max-content">
+            <div class="form-header">
+              <div class="img-icone">
+                <img src="assets/imagens/aviao.png" alt="" />
+              </div>
+              <h1>Solicite um orçamento</h1>
+            </div>
+            <div class="form-content">
             <p>Informe seus dados</p>
             <form
               action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/
@@ -102,6 +114,7 @@
                   </select>
                 </div>
               </div>
+              <div class="form-dados-complementares">
               <p>Quarto com cama infantil?</p>
               <input
                 type="radio"
@@ -148,26 +161,28 @@
                 value="suite"
               />
               <label for="preferencias-suite">Suite</label>
+              </div>
               <button type="submit">Solicitar orçamento</button>
+            </div>
             </form>
           </div>
         </div>
       </section>
 
       <!-- Ofertas - Segundo Bloco -->
-      <section class="Ofertas">
+      <section class="main-ofertas max-content">
         <div>
           <h2>Ofertas</h2>
-          <p>Com até 50% de desconto</p>
+          <p>Com até <span>50%</span> de desconto</p>
         </div>
-        <div>
-          <div>
+        <div class="main-ofertas-box-img">
+          <div class="box1">
             <figure>
               <img src="assets/imagens/rio.jpg" alt="Rio de Janeiro" />
               <figcaption>Rio de Janeiro</figcaption>
             </figure>
           </div>
-          <div>
+          <div class="box2">
             <figure>
               <img src="assets/imagens/manaus.jpg" alt="Manaus" />
               <figcaption>Manaus</figcaption>
@@ -192,74 +207,78 @@
       </section>
 
       <!-- Explore a Natureza - Terceiro Bloco -->
-      <section>
+      <section class="main-explore max-content">
         <div>
           <h2>Explore a Natureza</h2>
           <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
         </div>
-        <div>
+        <div class="box0">
+        <div class="box1">
           <div>
             <img src="assets/imagens/lencol.jpg" alt="Lençois maranheses" />
           </div>
-          <div>
+          <div class="main-explore-text">
             <h3>Lençois Maranhenses, Brasil</h3>
             <p>Ida e volta a partir de R$ 79,99</p>
           </div>
         </div>
-        <div>
+        <div class="box2">
           <div>
             <img src="assets/imagens/goias.jpg" alt="Cachoeira Santa Bárbara" />
           </div>
-          <div>
+          <div class="main-explore-text">
             <h3>Cachoeira Santa Bárbara, Brasil</h3>
             <p>Ida e volta a partir de R$ 139,99</p>
           </div>
+        </div>
         </div>
       </section>
     </main>
 
     <!-- Footer - Contato -->
     <footer class="footer-contato">
-      <div>
-        <h2>Contato</h2>
-        <div>
-          <img src="assets/imagens/local.png" alt="local icone" />
-          <p>São Paulo, SP</p>
+      <div class="max-content">
+        <div class="box1">
+          <h2>Contato</h2>
+          <div class="img-icone">
+            <img src="assets/imagens/local.png" alt="local icone" />
+            <p>São Paulo, SP</p>
+          </div>
+          <div class="img-icone">
+            <img src="assets/imagens/telefone.png" alt="telefone icone" />
+            <p>Telefone: (11) 95477-0358</p>
+          </div>
+          <div class="img-icone">
+            <img src="assets/imagens/email.png" alt="email icone" />
+            <p>guilhermesouza73@hotmail.com</p>
+          </div>
         </div>
-        <div>
-          <img src="assets/imagens/telefone.png" alt="telefone icone" />
-          <p>Telefone: (11) 95477-0358</p>
-        </div>
-        <div>
-          <img src="assets/imagens/email.png" alt="email icone" />
-          <p>guilhermesouza73@hotmail.com</p>
-        </div>
-      </div>
-      <div>
-        <h2>Nossas Redes Sociais</h2>
-        <div>
-          <a href="#"
-            ><img
-              src="assets/imagens/fb.png"
-              alt="facebook icone"
-            />/AgenciaDeViagem</a
-          >
-        </div>
-        <div>
-          <a href="#"
-            ><img
-              src="assets/imagens/ig.png"
-              alt="instagram icone"
-            />@AgenciaDeViagem</a
-          >
-        </div>
-        <div>
-          <a href="#"
-            ><img
-              src="assets/imagens/tt.png"
-              alt="twitter icone"
-            />@AgenciaDeViagem</a
-          >
+        <div class="box2">
+          <h2>Nossas Redes Sociais</h2>
+          <div class="img-icone">
+            <a href="#"
+              ><img
+                src="assets/imagens/fb.png"
+                alt="facebook icone"
+              />/AgenciaDeViagem</a
+            >
+          </div>
+          <div class="img-icone">
+            <a href="#"
+              ><img
+                src="assets/imagens/ig.png"
+                alt="instagram icone"
+              />@AgenciaDeViagem</a
+            >
+          </div>
+          <div class="img-icone">
+            <a href="#"
+              ><img
+                src="assets/imagens/tt.png"
+                alt="twitter icone"
+              />@AgenciaDeViagem</a
+            >
+          </div>
         </div>
       </div>
     </footer>

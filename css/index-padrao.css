@@ -1,0 +1,268 @@
+/* Padrões Gerais */
+.max-content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+h2 {
+  font-weight: bold;
+  font-size: 22px;
+}
+h1 {
+  font-weight: bold;
+}
+body {
+  background-color: #80808029;
+  font-family: "Raleway", sans-serif;
+}
+.img-icone img {
+  width: 20px;
+}
+
+/* Header - Topo */
+.header {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+}
+.header-img img {
+  width: 30px;
+}
+.header .max-content a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #5d15d1;
+  font-size: 26px;
+  font-weight: bold;
+}
+.header .max-content a:hover {
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+/* Formulário  */
+.main-form-background {
+  width: 100%;
+  height: 680px;
+  background-image: url(../assets/imagens/bahia.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-box {
+  background-color: #fff;
+  height: calc(100% - 60px);
+  width: 100%;
+  max-height: auto;
+  max-height: 100%;
+}
+.form-header {
+  background-color: #5d15d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+  padding: 5px 0;
+}
+.form-content {
+  margin: 0 25px;
+}
+.form-content > p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.form-dados-pessoais label,
+.form-dados-pessoais input {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+}
+.form-dados-pessoais label {
+  margin: 0 0 5px 0;
+}
+.form-dados-pessoais input {
+  margin-bottom: 10px;
+  width: calc(100% - 3.2px);
+}
+.form-dados-pessoais input::placeholder {
+  padding-left: 5px;
+}
+.form-dados-viagem {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-dados-viagem-box {
+  flex-basis: calc(50% - 15px);
+}
+.form-dados-viagem-box label,
+.form-dados-viagem-box input,
+.form-dados-viagem-box select {
+  display: block;
+  width: 100%;
+  padding: 6px 0;
+}
+.form-dados-complementares {
+  margin-top: 15px;
+}
+.form-dados-complementares p,
+.form-dados-complementares input,
+.form-dados-complementares label {
+  margin: 7px 0;
+}
+.form-dados-complementares label {
+  margin-right: 40px;
+}
+.form-content button {
+  color: #fff;
+  background-color: #5d15d1;
+  padding: 5px 10px;
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+/* Ofertas - Segundo Bloco */
+.main-ofertas {
+  display: flex;
+  flex-direction: column;
+}
+.main-ofertas > div {
+  width: 100%;
+  margin-top: 20px;
+}
+.main-ofertas > div p {
+  margin: 10px 0;
+}
+.main-ofertas span {
+  font-weight: bold;
+}
+.main-ofertas-box-img {
+  display: flex;
+  width: 100%;
+  height: 375px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.main-ofertas-box-img .box1,
+.main-ofertas-box-img .box2 {
+  flex-basis: calc(100% - 20px);
+}
+.main-ofertas-box-img figure {
+  position: relative;
+}
+.main-ofertas-box-img img {
+  width: 100%;
+}
+.main-ofertas-box-img figcaption {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  width: calc(100% - 20px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 0 10px 20px;
+}
+.main-ofertas-box-img .box1,
+.main-ofertas-box-img .box2 {
+  max-height: 100%;
+}
+.main-ofertas-box-img .box1 figure,
+.main-ofertas-box-img .box1 img {
+  width: 100%;
+  height: 100%;
+}
+.main-ofertas-box-img .box2 {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-ofertas-box-img .box2 figure {
+  flex-basis: calc(50% - 5px);
+}
+.main-ofertas-box-img .box2 img {
+  height: 100%;
+}
+
+/* Explore - Terceiro Bloco */
+.main-explore div:nth-child(1) h2 {
+  margin: 20px 0 10px 0;
+}
+.main-explore div:nth-child(1) p {
+  margin-bottom: 10px;
+}
+.main-explore img {
+  width: 100%;
+}
+.main-explore .box0 {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.main-explore .box1,
+.main-explore .box2 {
+  flex-basis: calc(50% - 10px);
+}
+.main-explore-text {
+  background-color: #fff;
+  margin-top: 5px;
+  padding: 15px 0 15px 20px;
+}
+.main-explore-text h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer-contato {
+  background-color: #5d15d1;
+  margin-top: 40px;
+  padding: 20px 0;
+  color: #fff;
+}
+
+.footer-contato a:hover {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.footer-contato h2 {
+  margin-bottom: 20px;
+}
+.footer-contato .max-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px;
+  align-items: center;
+}
+.footer-contato .max-content .img-icone {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  align-items: center;
+}
+.footer-contato .box2 a {
+  position: relative;
+}
+.footer-contato .box2 img {
+  position: absolute;
+  left: -30px;
+  top: -4px;
+  padding-right: 100%;
+}
+.footer-contato .box2 a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-contato .box2 img:hover {
+  width: 25px;
+  transition: 0.3s;
+}
