@@ -1,0 +1,78 @@
+/* Até 110px */
+@media only screen and (max-width: 1100px) {
+  /* Padrão geral */
+  .max-content {
+    max-width: 90%;
+  }
+}
+
+/* Até 768px */
+@media only screen and (max-width: 768px) {
+  /* Padrão geral */
+  h2 {
+    font-size: 20px;
+  }
+  .header p {
+    font-size: 24px;
+  }
+  /* Formulário */
+  .main-form button {
+    width: 100%;
+  }
+
+  /* Ofertas - Segundo Bloco */
+  .main-ofertas-box-img {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .main-ofertas-box-img img {
+    height: 275px !important;
+  }
+  .main-ofertas-box-img box2 {
+    flex-direction: column;
+  }
+  .main-ofertas-box-img .box2 figure {
+    flex-basis: 100%;
+  }
+  .main-ofertas-box-img figcaption {
+    bottom: 2.5px;
+  }
+
+  /* Explore - Terceiro Bloco */
+  .main-explore .box0 {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* Footer */
+  .footer-contato .max-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-contato .max-content .box2 {
+    margin-left: -35px;
+  }
+}
+
+/* Até 540px */
+@media only screen and (max-width: 540px) {
+  /* Formulário */
+  .main-form-background {
+    height: auto;
+    padding: 40px 0;
+  }
+  .form-box {
+    padding-bottom: 0;
+  }
+  .form-dados-viagem {
+    flex-direction: column;
+  }
+  .form-dados-viagem-box input {
+    width: calc(100% - 3.2px);
+  }
+  .form-dados-complementares div {
+    flex-basis: 100%;
+  }
+}

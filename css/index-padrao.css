@@ -58,6 +58,7 @@ body {
   width: 100%;
   max-height: auto;
   max-height: 100%;
+  padding-bottom: 20px;
 }
 .form-header {
   background-color: #5d15d1;
@@ -110,6 +111,13 @@ body {
 }
 .form-dados-complementares {
   margin-top: 15px;
+}
+.form-dados-complementares {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-dados-complementares p {
+  flex-basis: 100%;
 }
 .form-dados-complementares p,
 .form-dados-complementares input,
@@ -251,6 +259,7 @@ body {
 }
 .footer-contato .box2 a {
   position: relative;
+  margin-left: 30px;
 }
 .footer-contato .box2 img {
   position: absolute;
